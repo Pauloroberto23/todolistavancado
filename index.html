@@ -23,7 +23,7 @@
             </button>
         </div>
       </form>
-      <form  id="edit-form">
+      <form  id="edit-form" class="hide">
         <p>Edite sua tarefa:</p>
         <div class="form-control">
             <input type="text" id="edit-input">
@@ -32,16 +32,51 @@
             </button>
 
         </div>
+        <button id="cancel-edit-btn">Cancelar</button>
         <div id="toolbar">
             <div id="search">
                 <h4>Pesquisa</h4>
                <form >
-                <input type="text" id="search-input" placeholder="Buscar">;
+                <input type="text" id="search-input" placeholder="Buscar">
                 <button id="erase-button">
                     <i class="fa-solid fa-delete-left"></i>
                 </button>
                </form>
             </div>
+            <div id="filter">
+                <h4>filtrar:</h4>
+                <select id="filter-select">
+                    <option value="all">todos</option>
+                    <option value="done">Feitos</option>
+                    <option value="todo">A fazer</option>
+                </select>
+            </div>
+        </div>
+        <div id="todo-list">
+           <div class="todo done">
+            <h3>Estou fazendo alguma coisa...</h3>
+            <button class="finish-todo">
+                <i class="fa-solid fa-check"></i>
+            </button>
+            <button class="edit-todo">
+                <i class="fa-solid fa-pen"></i>
+            </button>
+            <button class="remove-todo">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+           </div> 
+           <div class="todo">
+            <h3>Estudar javaScript</h3>
+            <button class="finish-todo">
+                <i class="fa-solid fa-check"></i>
+            </button>
+            <button class="edit-todo">
+                <i class="fa-solid fa-pen"></i>
+            </button>
+            <button class="remove-todo">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+           </div> 
         </div>
       </form>
     </div>
