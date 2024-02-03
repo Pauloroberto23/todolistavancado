@@ -8,6 +8,10 @@
 
 }
 
+html {
+    height: 100vh;
+}
+
 body {
     background-image: url("img/luis-gherasim-EXes9qsIIMI-unsplash.jpg");
     background-position: center;
